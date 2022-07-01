@@ -28,7 +28,7 @@ public void OnClientPutInServer(int client)
 
 	GetLanguageInfo(GetServerLanguage(), sLang, 3);
     
-    #if defined USE_GEOIP
+    	#if defined USE_GEOIP
 	bool bCountryFound = GeoipCountry(sIP, sCountry, sizeof(sCountry));
 	bool bRegionFound  = GeoipRegion(sIP, sRegion, sizeof(sRegion));
 	bool bCityFound    = GeoipCity(sIP, sCity, sizeof(sCity));

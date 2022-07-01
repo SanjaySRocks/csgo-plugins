@@ -1,8 +1,14 @@
 #include <sourcemod>
-#include <geoip>
 
 #define USE_GEOIP
-//#define USE_SXGEO
+// #define USE_SXGEO
+
+#if defined USE_GEOIP
+#include <geoip>
+#endif
+#if defined USE_SXGEO
+#include <sxgeo>
+#endif
 
 #pragma semicolon 1
 
